@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='{% static 'css/movies.css' %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div class='container' align='center'>
+      <div class='jumbotron'>
+        <h1>Vishwa Movies</h1>
+        <p>Upto date movies information</p>
+        <a class='btn btn-primary btn-lg' href='/addmovies' role='button'>Add movie</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a class='btn btn-primary btn-lg' href='/movieslist' role='button'>List Movie</a>
+      </div>
+    </div>
+  </body>
+</html>

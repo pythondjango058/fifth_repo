@@ -1,0 +1,15 @@
+body{
+  background-color:blue;
+}
+.container .jumbotron{
+  margin-top: 200px;
+  background-color:orange;
+  color: white;
+  font-family:'Meriweather',serif;
+}
+
+table,th{
+  background-color:red;
+  text-align:center;
+  border:2px solid  white;
+}

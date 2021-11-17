@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href='{% static 'css/movies.css' %}'>
+    <link rel="preconnect" href='https://fonts.googleapis.com'>
+  </head>
+  <body>
+    <div class='container'>
+      {% if list %}
+      <table>
+        <thead>
+          <th>Release_Date</th>
+          <th>Movie Name</th>
+          <th>Hero</th>
+          <th>Heroine</th>
+          <th>Rating</th>
+        </thead>
+        {% for l1 in list %}
+        <tr>
+          <td>{{l1.rdate}}</td>
+          <td>{{l1.moviename}}</td>
+          <td>{{l1.hero}}</td>
+          <td>{{l1.heroine}}</td>
+          <td>{{l1.rating}}</td>
+        <tr>
+          {% endfor %}
+        </table>
+        {% else %}
+        <p>There is any table not found</p>
+        {% endif %}
+    </div>
+  </body>
+</html>
